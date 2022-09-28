@@ -3,3 +3,15 @@
     font-size: $font;
   }
 }
+
+@mixin atMedium($font: 1.1rem) {
+  @media (min-width: 800px) {
+    font-size: $font;
+  }
+}
+
+@mixin atLarge($font: 1.1rem) {
+  @media (min-width: 1200px) {
+    font-size: $font;
+  }
+}
