@@ -2,6 +2,7 @@
 @import './src/scss/_mixins.scss';
 @import './src/scss/_large-hero.scss';
 @import './src/scss/_btn.scss';
+@import './headline';
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -19,10 +20,23 @@ img {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+
+  &--medium {
+    max-width: 976px;
+  }
+
+  .wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .page-section {
-  padding: 4.5rem 0;
+  padding: 1.2rem 0;
+
+  @media (min-width: 800px) {
+    padding: 3rem 0;
+  }
 
   &--blue {
     background-color: $mainBlue;
