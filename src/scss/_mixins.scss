@@ -15,3 +15,11 @@
     font-size: $font;
   }
 }
+
+@mixin clearfix {
+  &::after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+}
