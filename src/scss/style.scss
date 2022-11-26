@@ -7,6 +7,8 @@
 @import './generic-content';
 @import './section-title';
 @import './feature-item';
+@import './page-section';
+@import './testimonial';
 
 // Global Rules
 body {
@@ -50,18 +52,5 @@ a {
     @media (min-width: 800px) {
       margin-bottom: 3.875rem;
     }
-  }
-}
-
-.page-section {
-  padding: 1.2rem 0;
-
-  @media (min-width: 800px) {
-    padding: 3rem 0;
-  }
-
-  &--blue {
-    background-color: $mainBlue;
-    color: #fff;
   }
 }

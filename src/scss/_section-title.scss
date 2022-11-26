@@ -8,6 +8,10 @@
     font-weight: 500;
   }
 
+  &--blue {
+    color: $mainBlue;
+  }
+
   &__icon {
     margin-right: 0.5rem;
     display: block;
