@@ -4,6 +4,7 @@
 @import './src/scss/_btn.scss';
 @import './headline';
 @import './row';
+@import './wrapper';
 @import './generic-content';
 @import './section-title';
 @import './feature-item';
@@ -27,30 +28,4 @@ img {
 
 a {
   color: $mainOrange;
-}
-
-.wrapper {
-  overflow: hidden;
-  padding-left: 18px;
-  padding-right: 18px;
-  max-width: 1236px;
-  margin-left: auto;
-  margin-right: auto;
-
-  &--medium {
-    max-width: 976px;
-  }
-
-  .wrapper {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  &--b-margin {
-    margin-bottom: 1rem;
-
-    @media (min-width: 800px) {
-      margin-bottom: 3.875rem;
-    }
-  }
 }
