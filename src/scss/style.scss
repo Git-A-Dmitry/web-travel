@@ -10,8 +10,8 @@
 @import './feature-item';
 @import './page-section';
 @import './testimonial';
+@import './site-footer';
 
-// Global Rules
 body {
   font-family: 'Roboto', sans-serif;
   color: #333;
@@ -27,5 +27,5 @@ img {
 }
 
 a {
-  color: $mainOrange;
+  color: red;
 }
