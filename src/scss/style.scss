@@ -1,7 +1,8 @@
-@import './src/scss/_variable.scss';
-@import './src/scss/_mixins.scss';
-@import './src/scss/_large-hero.scss';
-@import './src/scss/_btn.scss';
+@import './variable';
+@import './global';
+@import './mixins';
+@import './large-hero';
+@import './btn';
 @import './headline';
 @import './row';
 @import './wrapper';
@@ -11,21 +12,5 @@
 @import './page-section';
 @import './testimonial';
 @import './site-footer';
-
-body {
-  font-family: 'Roboto', sans-serif;
-  color: #333;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-a {
-  color: red;
-}
+@import './site-header';
+@import './primary-nav';
