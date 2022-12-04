@@ -2,6 +2,8 @@ const { src, dest, watch, series } = require('gulp');
 
 const sass = require('gulp-sass')(require('sass'));
 const prefix = require('gulp-autoprefixer');
+const concat = require('gulp-concat');
+const uglify = require('gulp-uglify');
 
 function compileScss() {
   return src('src/scss/*scss') //
@@ -10,8 +12,16 @@ function compileScss() {
     .pipe(dest('./dist/css'));
 }
 
-function watchTask() {
-  watch('src/scss/*.scss', compileScss);
+function bundleJs() {
+  return src('src/scripts/*js') //
+    .pipe(concat('bundle.js'))
+    .pipe(uglify())
+    .pipe(dest('./dist/js'));
 }
 
-exports.default = series(compileScss, watchTask);
+function watchTask() {
+  watch('src/scss/*.scss', compileScss);
+  watch('src/scripts/*js', bundleJs);
+}
+
+exports.default = series(compileScss, bundleJs, watchTask);
