@@ -1,0 +1,1 @@
+let mobileMenu = new MobileMenu();
