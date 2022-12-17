@@ -1,5 +1,3 @@
-// import $ from 'jquery';
-
 class MobileMenu {
   constructor() {
     this.siteHeader = document.querySelector('.site-header');

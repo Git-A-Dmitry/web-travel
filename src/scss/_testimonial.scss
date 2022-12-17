@@ -4,9 +4,14 @@
   margin-bottom: 98px;
   border-radius: 5px;
 
+  p {
+    font-style: italic;
+  }
+
   @media (min-width: 800px) {
     margin-bottom: 0;
     padding: 0 1.8125rem 1px 1.8125rem;
+    font-size: 1.3rem;
   }
 
   &--last {
