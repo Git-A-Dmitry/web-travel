@@ -1,8 +1,10 @@
 class RevealOnScroll {
   constructor() {
     this.itemsToReveal = document.querySelectorAll('.feature-item, .testimonial');
+    // this.activeLink = document.querySelectorAll('.primary-nav li a');
     this.hideInitially();
     this.makeVisible();
+    // this.activateLink();
   }
 
   hideInitially() {
@@ -14,6 +16,10 @@ class RevealOnScroll {
   makeVisible() {
     this.itemsToReveal.forEach((el) => observer.observe(el));
   }
+
+  // activateLink() {
+  //   this.activeLink.forEach((el) => observer.observe(el));
+  // }
 }
 
 const observer = new IntersectionObserver((entries) => {
@@ -24,6 +30,12 @@ const observer = new IntersectionObserver((entries) => {
       entry.target.classList.remove('reveal-item');
     }
   });
+
+  // activeLink.forEach((link) => {
+  //   if (entry.target.id === link.dataset.nav) {
+  //     link.classList.add('reveal-item');
+  //   }
+  // });
 });
 
 // const hiddenElements = document.querySelectorAll('.feature-item');

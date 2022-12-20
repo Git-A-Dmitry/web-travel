@@ -1,1 +1,1 @@
-let mobileMenu = new MobileMenu();
+// let mobileMenu = new MobileMenu();
