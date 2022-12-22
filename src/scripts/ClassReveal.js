@@ -30,12 +30,6 @@ const observer = new IntersectionObserver((entries) => {
       entry.target.classList.remove('reveal-item');
     }
   });
-
-  // activeLink.forEach((link) => {
-  //   if (entry.target.id === link.dataset.nav) {
-  //     link.classList.add('reveal-item');
-  //   }
-  // });
 });
 
 // const hiddenElements = document.querySelectorAll('.feature-item');

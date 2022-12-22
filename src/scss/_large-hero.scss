@@ -2,8 +2,13 @@
   border-bottom: 10px solid $mainBlue;
   position: relative;
 
+  @media (min-width: 530px) {
+    height: 95vh;
+  }
+
   &__image {
     display: block;
+    height: 100%;
   }
 
   // &__parallax {

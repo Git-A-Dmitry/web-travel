@@ -1,6 +1,14 @@
 .row {
   @include clearfix;
 
+  // img {
+  //   box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.4);
+  // }
+
+  &--shadow {
+    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.4);
+  }
+
   &--t-padding {
     padding-top: 80px;
   }
