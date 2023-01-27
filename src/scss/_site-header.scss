@@ -56,6 +56,7 @@
     cursor: pointer;
 
     @media (min-width: 530px) {
+      height: 21px;
       top: 20px;
       right: 25px;
     }
@@ -67,6 +68,7 @@
       left: 0;
       width: 20px;
       height: 3px;
+      border-radius: 1px;
       background-color: #fff;
       transform-origin: 0 0;
       transition: transform 0.3s ease-out;
@@ -82,11 +84,13 @@
       left: 0;
       width: 20px;
       height: 3px;
+      border-radius: 1px;
       background-color: #fff;
       transition: all 0.3s ease-out;
       // transform-origin: 0 50%;
 
       @media (min-width: 530px) {
+        top: 9px;
         width: 30px;
       }
     }
@@ -98,6 +102,7 @@
       left: 0;
       width: 20px;
       height: 3px;
+      border-radius: 1px;
       background-color: #fff;
       transform-origin: 0 100%;
       transition: transform 0.3s ease-out;
@@ -117,7 +122,8 @@
       transform: rotate(45deg) scaleX(1.25);
 
       @media (min-width: 530px) {
-        transform: rotate(45deg) scaleX(0.85);
+        transform: rotate(45deg) scaleX(0.95);
+        // transform: rotate(45deg) scaleX(0.85);
       }
     }
 
@@ -130,7 +136,7 @@
       transform: rotate(-45deg) scaleX(1.25) translateY(1px);
 
       @media (min-width: 530px) {
-        transform: rotate(-45deg) scaleX(0.85) translateY(1px);
+        transform: rotate(-45deg) scaleX(0.94) translateY(1px);
       }
     }
   }

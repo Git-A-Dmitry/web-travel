@@ -1,5 +1,6 @@
 .feature-item {
   position: relative;
+  min-height: 250px;
   padding-left: 94px;
   padding-bottom: 2.5rem;
 
@@ -16,6 +17,6 @@
   }
 
   p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
